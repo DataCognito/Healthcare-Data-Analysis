@@ -1,5 +1,5 @@
 # Healthcare-Data-Analysis
-This project analyze patient's health and diagnose trends in hospital charges, BMI, and chronic conditions using Excel and Pivot Tables & Charts.
+This project analyze patient's health and diagnose trends in hospital charges, BMI, and chronic conditions using Excel.
 
 **Project Overview and Objective:**
 The objective of this project was to perform a comprehensive diagnostic analysis of patient healthcare data integrating demographic, medical examination, and hospitalization records to identify key factors driving high healthcare costs and contributing to poor patient outcomes. The project emphasizes rigorous data cleaning and transformation within the Excel environment to establish a reliable foundation for statistical analysis and dashboarding.
