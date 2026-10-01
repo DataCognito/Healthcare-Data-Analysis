@@ -12,12 +12,12 @@ The objective was to:
 - Clean and standardize the data
 - Handle missing values
 - Analyse healthcare charges across different patient and hospital characteristics
-- Identify patterns in healthcare costs and patient risk profiles
+- Identify patterns in healthcare costs and patient characteristics
 - Build an interactive Excel dashboard for analysis
 
 **Problem Statement:**
 
-The project began with a fundamental data challenge: the information was fragmented across three separate tables, preventing any immediate cross-analysis. The data was fragmented across three separate tables, making it difficult to perform cross-analysis directly. The first step was therefore to clean, integrate and prepare the data into a single master dataset. The analysis then focused on understanding variations in hospital charges and patterns across patient health and hospital-related characteristics.
+The data was fragmented across three separate tables, making it difficult to perform cross-analysis directly. The first step was therefore to clean, integrate and prepare the data into a single master dataset. The analysis then focused on understanding variations in hospital charges and patterns across patient health and hospital-related characteristics.
 
 ## Key Attributes
 
@@ -50,14 +50,14 @@ The analysis used attributes from the integrated master dataset, including:
 - Numerical Imputation: Missing values in the 'year' column were imputed using the calculated average of the existing 'year' values, rounded to the nearest integer.
 - Categorical Imputation: Missing values in the 'month' column were filled with the categorical value 'Sep'.
 - Missing values in 'smoker', 'hospital tier', and 'city tier' were filled using the most frequently occurring value (Mode) for each respective column.
-- Data Integration (Manual Merge): The three source files were manually consolidated into a single sheet and aligned records accurately.
+- Data Integration (Manual Merge): The three source files were manually consolidated into a single master dataset using the Customer ID to align records.
 
 **Analysis and Visualizations:**
 
 The analysis was performed using Excel Pivot Tables, charts and summary calculations.
-Core Analysis: Pivot Tables were created to establish key cross-tabulations, such as Charges by Weight Status and Cancer History distribution among smokers vs non-smokers.
-Summary Statistics (AI-Driven): Used Quick Analysis features to calculate overall statistics (Total customers count, Average costs, etc.) and generate basic visualizations.
-Dashboard Creation: An interactive dashboard was built using the visualizations and incorporating Slicers for dynamic filtering.
+- Core Analysis: Pivot Tables were created to establish key cross-tabulations, such as Charges by Weight Status and Cancer History distribution among smokers vs non-smokers.
+- Summary Statistics: Used Excel summary calculations to review overall customer counts, average costs and other key metrics.
+- Dashboard Creation: An interactive dashboard was built using the visualizations and incorporating Slicers for dynamic filtering.
 
 **Dashboard Preview:**
 
@@ -69,16 +69,10 @@ The dashboard uses Excel charts and slicers to explore healthcare cost patterns 
 
 **Key Findings:**
 
-Cost Drivers: Obese patients and those with Diabetes status were identified as having the highest average hospital charges.
-Surgical Cost Pattern: Patients with a higher number of major surgeries showed higher average hospital charges.
-Risk Audit: Analysis of Smoker Status vs. Cancer History revealed similar rates of cancer history among both groups (around 17%), showing the risk is widespread in this specific dataset.
-
-**Analysis Insights:**
-
-The diagnostic analysis of the patient data yielded four critical insights for improving resource allocation and cost management:
-Descriptive: The data clearly shows that Obese patients and those diagnosed with Diabetes are the high-cost groups, accounting for the highest total healthcare costs.
-Diagnostic: Patients with a higher Number of Major Surgeries or those treated in Hospital Tier 1 facilities are the primary drivers of increased average charges, diagnosing where the most expensive care interventions are occurring.
+- Healthcare Cost Patterns: Obese patients and patients with Diabetes Status showed higher average hospital charges in the analysed dataset.
+- Surgical Cost Pattern: Patients with a higher number of major surgeries showed higher average hospital charges.
+- Smoker and Cancer History: Cancer history was approximately 17% among both smokers and non-smokers in the analysed dataset.
 
 **Conclusion:**
 
-The project successfully built a reliable master dataset by rigorously cleaning and manually integrating three fragmented healthcare records in Excel. The final dashboard delivers essential diagnostic insights on the major cost drivers and patient risk profiles, showcasing end-to-end proficiency in data preparation, data analysis, and visualization.
+The project provided end-to-end experience in data preparation, data integration, analysis and visualization using Excel.
