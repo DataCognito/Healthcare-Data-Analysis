@@ -1,64 +1,84 @@
 # Healthcare-Data-Analysis
-This project analyze patient's health and diagnose trends in hospital charges, BMI, and chronic conditions using Excel.
+
+An Excel-based healthcare data analysis project focused on understanding hospital charges, patient health indicators, chronic conditions, and factors associated with higher healthcare costs.
 
 **Project Overview and Objective:**
-The objective of this project was to perform a comprehensive diagnostic analysis of patient healthcare data integrating demographic, medical examination, and hospitalization records to identify key factors driving high healthcare costs and contributing to poor patient outcomes. The project emphasizes rigorous data cleaning and transformation within the Excel environment to establish a reliable foundation for statistical analysis and dashboarding.
+
+The source data was provided across three separate tables containing patient, medical, and hospitalization-related information.
+
+The objective was to:
+
+- Combine the separate datasets into a usable master dataset
+- Clean and standardize the data
+- Handle missing values
+- Analyse healthcare charges across different patient and hospital characteristics
+- Identify patterns in healthcare costs and patient risk profiles
+- Build an interactive Excel dashboard for analysis
 
 **Problem Statement:**
-The project began with a fundamental data challenge: the information was fragmented across three separate tables, preventing any immediate cross-analysis. This forced us to first clean, merge, and transform the raw data to calculate essential diagnostic metrics. The primary challenge was to successfully integrate these datasets and then perform multi-dimensional analysis to answer critical questions about high hospital charges and the prevalence of chronic conditions (e.g., BMI, Diabetes Status).
 
-**Attribute Details:**
-The analysis utilized attributes from the integrated master sheet, covering three main categories:
-Identifiers/Keys
-Customer ID (Text): The unique ID used as the relational key for manually merging all three source tables.
-Financial/Metric
-Charges (Decimal): The core financial metric used to determine cost drivers and calculate all average costs.
-Health Status
-BMI (Decimal): Used to classify patients into Weight Status and analyze health profile severity.
-Diabetes Status (Text): A primary diagnostic variable used to analyze its correlation with hospital charges.
-Categorical & Segmentation
-Smoker (Text): A key categorical variable used for risk segmentation (e.g., analyzing Cancer History distribution).
-Hospital Tier (Text): Used for auditing cost variation across different facility levels as required by the assignment.
-City Tier (Text): Used for auditing cost variation based on geographical location.
+The project began with a fundamental data challenge: the information was fragmented across three separate tables, preventing any immediate cross-analysis. The data was fragmented across three separate tables, making it difficult to perform cross-analysis directly. The first step was therefore to clean, integrate and prepare the data into a single master dataset. The analysis then focused on understanding variations in hospital charges and patterns across patient health and hospital-related characteristics.
+
+## Key Attributes
+
+The analysis used attributes from the integrated master dataset, including:
+
+- **Customer ID** – unique identifier used to integrate the source tables
+- **Charges** – primary financial metric used for healthcare cost analysis
+- **BMI** – used to classify patients by weight status
+- **Diabetes Status** – used to compare healthcare charges across diabetes groups
+- **Smoker** – used for patient risk segmentation
+- **Hospital Tier** – used to compare costs across facility levels
+- **City Tier** – used to analyse cost differences by location category
 
 **Tools & Technologies:**
 
-Tool: Microsoft Excel
+**Microsoft Excel**
 
-Data Integration: Manual Key-Based Merging
-
-Analysis: Pivot Tables and Quick Analysis (AI-driven features)
-
-Visualization: Excel Charts and Slicers
+- Data Cleaning
+- Data Integration
+- Pivot Tables
+- Excel Charts
+- Slicers
+- Dashboard Development
 
 **Data Pre-Processing:**
-Data cleaning and transformation were executed strictly based on the requirements to ensure the dataset was reliable.
-Missing Value: An initial task was performed to check and quantify all missing values (marked with '?') in the source tables.
-Numerical Imputation: Missing values in the 'year' column were imputed using the calculated average of the existing 'year' values, rounded to the nearest integer.
-Categorical Imputation: Missing values in the 'month' column were filled with the categorical value 'Sep'.
-Missing values in 'smoker', 'hospital tier', and 'city tier' were filled using the most frequently occurring value (Mode) for each respective column.
-Data Integration (Manual Merge): The three source files were manually consolidated into a single sheet and aligned records accurately.
+
+**Data cleaning and preparation:**
+
+- Missing Value: An initial task was performed to check and quantify all missing values (marked with '?') in the source tables.
+- Numerical Imputation: Missing values in the 'year' column were imputed using the calculated average of the existing 'year' values, rounded to the nearest integer.
+- Categorical Imputation: Missing values in the 'month' column were filled with the categorical value 'Sep'.
+- Missing values in 'smoker', 'hospital tier', and 'city tier' were filled using the most frequently occurring value (Mode) for each respective column.
+- Data Integration (Manual Merge): The three source files were manually consolidated into a single sheet and aligned records accurately.
 
 **Analysis and Visualizations:**
-The analysis was performed using a combination of Pivot Tables and AI-driven features as per the requirement.
+
+The analysis was performed using Excel Pivot Tables, charts and summary calculations.
 Core Analysis: Pivot Tables were created to establish key cross-tabulations, such as Charges by Weight Status and Cancer History distribution among smokers vs non-smokers.
 Summary Statistics (AI-Driven): Used Quick Analysis features to calculate overall statistics (Total customers count, Average costs, etc.) and generate basic visualizations.
 Dashboard Creation: An interactive dashboard was built using the visualizations and incorporating Slicers for dynamic filtering.
+
+**Dashboard Preview:**
+
+The dashboard uses Excel charts and slicers to explore healthcare cost patterns across different patient and hospital characteristics.
+
+![Healthcare Analysis Dashboard](Dashboard.jpg)
 
 **Insights and Conclusion:**
 
 **Key Findings:**
 
 Cost Drivers: Obese patients and those with Diabetes status were identified as having the highest average hospital charges.
-Surgical Risk: Patients with higher Number of Major Surgeries has significantly increased average charges.
+Surgical Cost Pattern: Patients with a higher number of major surgeries showed higher average hospital charges.
 Risk Audit: Analysis of Smoker Status vs. Cancer History revealed similar rates of cancer history among both groups (around 17%), showing the risk is widespread in this specific dataset.
 
 **Analysis Insights:**
+
 The diagnostic analysis of the patient data yielded four critical insights for improving resource allocation and cost management:
 Descriptive: The data clearly shows that Obese patients and those diagnosed with Diabetes are the high-cost groups, accounting for the highest total healthcare costs.
 Diagnostic: Patients with a higher Number of Major Surgeries or those treated in Hospital Tier 1 facilities are the primary drivers of increased average charges, diagnosing where the most expensive care interventions are occurring.
-Predictive: Given the strong correlation between poor health markers (BMI, Diabetes) and high costs, we can predict that a strategic focus on preventative care and management for these high-risk groups will effectively reduce the burden of future high-cost hospitalizations.
-Prescriptive: To immediately manage costs, we recommend auditing the charges associated with Hospital Tier 1 facilities and the most frequent procedures, as this is the costliest segment of care identified in the dataset.
 
 **Conclusion:**
-The project successfully built a reliable master dataset by rigorously cleaning and manually integrating three fragmented healthcare records in Excel. The final dashboard delivers essential diagnostic insights on the major cost drivers and patient risk profiles, showcasing end-to-end proficiency in data preparation, statistical analysis, and visualization.
+
+The project successfully built a reliable master dataset by rigorously cleaning and manually integrating three fragmented healthcare records in Excel. The final dashboard delivers essential diagnostic insights on the major cost drivers and patient risk profiles, showcasing end-to-end proficiency in data preparation, data analysis, and visualization.
